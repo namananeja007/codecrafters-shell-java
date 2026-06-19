@@ -735,7 +735,6 @@ public class Main {
                 current.append(c);
             }
         }
-
         if (current.length() > 0) tokens.add(current.toString());
 
         return tokens.toArray(new String[0]);
