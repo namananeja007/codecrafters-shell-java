@@ -736,7 +736,6 @@ public class Main {
             }
         }
         if (current.length() > 0) tokens.add(current.toString());
-
         return tokens.toArray(new String[0]);
     }
 }   
