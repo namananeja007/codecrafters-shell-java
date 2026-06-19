@@ -699,8 +699,8 @@ public class Main {
     private static String[] parseInput(String input) {
         List<String> tokens = new ArrayList<>();
         StringBuilder current = new StringBuilder();
-
-        boolean inSingleQuotes = true;
+// 
+        boolean inSingleQuotes = false;
         boolean inDoubleQuotes = false;
 
         for (int i = 0; i < input.length(); i++) {
