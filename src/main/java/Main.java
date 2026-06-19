@@ -695,17 +695,14 @@ public class Main {
 
         return null;
     }
-// 
     private static String[] parseInput(String input) {
         List<String> tokens = new ArrayList<>();
         StringBuilder current = new StringBuilder();
-// 
         boolean inSingleQuotes = false;
         boolean inDoubleQuotes = false;
 
         for (int i = 0; i < input.length(); i++) {
             char c = input.charAt(i);
-
             if (inDoubleQuotes && c == '\\') {
                 if (i + 1 < input.length()) {
                     char next = input.charAt(i + 1);
@@ -719,7 +716,6 @@ public class Main {
                 continue;
             }
 
-            // commit-4
             
             if (!inSingleQuotes && !inDoubleQuotes && c == '\\') {
                 if (i + 1 < input.length()) {
