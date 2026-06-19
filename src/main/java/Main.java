@@ -691,7 +691,7 @@ public class Main {
         for (String dir : directories) {
             File file = new File(dir, command);
             if (file.exists() && file.canExecute()) return file.getAbsolutePath();
-        } // //
+        } 
 
         return null;
     }
