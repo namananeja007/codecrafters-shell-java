@@ -691,7 +691,7 @@ public class Main {
         for (String dir : directories) {
             File file = new File(dir, command);
             if (file.exists() && file.canExecute()) return file.getAbsolutePath();
-        } 
+        } //
 
         return null;
     }
@@ -700,7 +700,7 @@ public class Main {
         List<String> tokens = new ArrayList<>();
         StringBuilder current = new StringBuilder();
 
-        boolean inSingleQuotes = false;
+        boolean inSingleQuotes = true;
         boolean inDoubleQuotes = false;
 
         for (int i = 0; i < input.length(); i++) {
