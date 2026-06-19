@@ -699,7 +699,7 @@ public class Main {
     private static String[] parseInput(String input) {
         List<String> tokens = new ArrayList<>();
         StringBuilder current = new StringBuilder();
-// 
+
         boolean inSingleQuotes = false;
         boolean inDoubleQuotes = false;
 
