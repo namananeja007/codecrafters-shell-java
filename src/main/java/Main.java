@@ -715,8 +715,6 @@ public class Main {
                 current.append(c);
                 continue;
             }
-
-            
             if (!inSingleQuotes && !inDoubleQuotes && c == '\\') {
                 if (i + 1 < input.length()) {
                     current.append(input.charAt(i + 1));
