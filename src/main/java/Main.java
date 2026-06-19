@@ -722,7 +722,6 @@ public class Main {
                 }
                 continue;
             }
-
             if (c == '\'' && !inDoubleQuotes) {
                 inSingleQuotes = !inSingleQuotes;
             } else if (c == '"' && !inSingleQuotes) {
