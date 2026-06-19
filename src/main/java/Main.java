@@ -718,8 +718,8 @@ public class Main {
                 current.append(c);
                 continue;
             }
-            
-            // commit-3
+
+            // commit-4
             
             if (!inSingleQuotes && !inDoubleQuotes && c == '\\') {
                 if (i + 1 < input.length()) {
